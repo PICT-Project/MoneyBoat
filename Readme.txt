@@ -1,1 +1,3 @@
-Android app which makes splitting bills easy with friends and family. It organizes all shared expenses in one place, so that everyone can see who they owe.
+My Application: Android Project
+rest.py : server script
+projectdump.sql : MySql database schema
