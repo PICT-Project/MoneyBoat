@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="16dp">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="325dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
+        android:gravity="center"
+        android:text="M O N E Y B O A T "
+        android:textColor="@color/colorPrimary"
+        android:textSize="40sp"
+        android:textStyle="bold|italic"
+        card_view:layout_constraintHorizontal_bias="0.431"
+        card_view:layout_constraintLeft_toLeftOf="parent"
+        card_view:layout_constraintRight_toRightOf="parent"
+        card_view:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:text="Not a member? Sign up."
+        android:background="@android:color/transparent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/button2"
+        android:clickable="true"
+        android:textAllCaps="false"
+        android:textStyle="normal"
+        android:alpha="0.8"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        card_view:layout_constraintLeft_toLeftOf="parent"
+        card_view:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="8dp"
+        card_view:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+    <ImageView
+        android:layout_width="220dp"
+        android:layout_height="110dp"
+        android:background="@drawable/moneyboat"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        card_view:layout_constraintLeft_toLeftOf="parent"
+        card_view:layout_constraintTop_toTopOf="parent"
+        card_view:layout_constraintRight_toRightOf="parent"
+        card_view:layout_constraintHorizontal_bias="0.567" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="336dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="264dp"
+        card_view:cardElevation="15dp"
+        card_view:layout_constraintLeft_toLeftOf="parent"
+        card_view:layout_constraintRight_toRightOf="parent"
+        card_view:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/cardView">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="337dp"
+            android:layout_height="220dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="12dp"
+            android:orientation="vertical"
+            card_view:layout_constraintLeft_toLeftOf="parent"
+            card_view:layout_constraintTop_toBottomOf="@+id/textView">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="175dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="32dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:clickable="true"
+                android:text="LOGIN"
+                android:textColor="#FFF"
+                android:textStyle="bold"
+                android:layout_below="@+id/editText2"
+                android:layout_centerHorizontal="true" />
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/button"
+                android:imeOptions="actionNext"
+                android:layout_alignParentTop="true"
+                android:layout_alignRight="@+id/button"
+                android:layout_marginEnd="14dp"
+                android:layout_marginRight="14dp"
+                android:layout_marginTop="24dp"
+                android:background="#FFF"
+                android:drawablePadding="10dp"
+                android:backgroundTint="@android:color/transparent"
+                android:drawableLeft="@drawable/ic_call_black_24dp"
+                android:ems="10"
+                android:hint="   Phone"
+                android:inputType="phone"
+                android:textColorHint="#939393" />
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/editText"
+                android:imeOptions="actionNext"
+                android:drawablePadding="10dp"
+                android:layout_alignStart="@+id/editText"
+                android:layout_alignTop="@+id/editText"
+                android:layout_marginTop="39dp"
+                android:background="#FFF"
+                android:backgroundTint="@android:color/transparent"
+                android:drawableLeft="@drawable/ic_lock_black_24dp"
+                android:ems="10"
+                android:hint=" Password"
+                android:inputType="textPassword"
+                android:textColorHint="#939393" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/button"
+                android:layout_centerHorizontal="true"
+                android:drawableLeft="@drawable/ic_visibility_black_24dp"
+                android:paddingTop="15dp"
+                android:text="  To see password cover the front camera"
+                android:textSize="12dp" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+</android.support.constraint.ConstraintLayout>

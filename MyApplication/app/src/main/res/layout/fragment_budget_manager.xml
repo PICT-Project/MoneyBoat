@@ -1,0 +1,309 @@
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="8dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="8dp"
+    tools:context="com.example.tahakothawala.myapplication.BudgetManager"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <android.support.v7.widget.CardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            card_view:cardUseCompatPadding="true"
+            android:layout_height="match_parent">
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:layout_editor_absoluteY="4dp"
+                tools:layout_editor_absoluteX="3dp">
+
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/circle"
+                    card_view:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="16dp"
+                    card_view:layout_constraintLeft_toLeftOf="parent"
+                    card_view:layout_constraintRight_toRightOf="parent" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reset"
+                    android:visibility="visible"
+                    android:id="@+id/reset"
+                    android:background="@android:color/transparent"
+                    android:alpha="0.4"
+                    android:textAllCaps="false"
+                    android:layout_marginLeft="180dp"
+                    card_view:layout_constraintLeft_toLeftOf="@+id/imageView5"
+                    card_view:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="212dp"
+                    android:layout_marginStart="180dp" />
+
+                <TextView
+                    android:id="@+id/Spend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Spent"
+                    android:textSize="30sp"
+                    card_view:layout_constraintLeft_toLeftOf="parent"
+                    card_view:layout_constraintRight_toRightOf="parent"
+                    android:textStyle="bold"
+                    card_view:layout_constraintTop_toTopOf="@+id/imageView5"
+                    android:layout_marginTop="37dp"
+                    android:layout_marginRight="8dp"
+                    card_view:layout_constraintHorizontal_bias="0.516"
+                    android:layout_marginEnd="8dp" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    card_view:layout_constraintLeft_toLeftOf="parent"
+                    card_view:layout_constraintTop_toTopOf="parent"
+                    card_view:layout_constraintBottom_toBottomOf="parent"
+                    card_view:layout_constraintRight_toRightOf="parent"
+                    android:layout_marginTop="8dp"
+                    card_view:layout_constraintVertical_bias="0.485"
+                    android:layout_marginRight="8dp"
+                    card_view:layout_constraintHorizontal_bias="0.512"
+                    android:layout_marginEnd="8dp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="40dp"
+                    android:background="#c3c3c3"
+                    card_view:layout_constraintRight_toLeftOf="@+id/reset"
+                    card_view:layout_constraintLeft_toRightOf="@+id/button4"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="16dp"
+                    card_view:layout_constraintTop_toBottomOf="@+id/imageView5"
+                    card_view:layout_constraintHorizontal_bias="1.0" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="40dp"
+                    android:background="#c3c3c3"
+                    card_view:layout_constraintRight_toLeftOf="@+id/button4"
+                    android:layout_marginRight="26dp"
+                    android:layout_marginTop="16dp"
+                    card_view:layout_constraintTop_toBottomOf="@+id/imageView5"
+                    android:id="@+id/view" />
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="    Set Budget   "
+                    android:textAllCaps="false"
+                    android:background="@drawable/button4"
+                    card_view:layout_constraintLeft_toLeftOf="parent"
+                    card_view:layout_constraintRight_toRightOf="parent"
+                    android:layout_marginTop="18dp"
+                    card_view:layout_constraintTop_toBottomOf="@+id/imageView5"
+                    card_view:layout_constraintHorizontal_bias="0.501" />
+
+                <TextView
+                    android:id="@+id/textView34"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="31dp"
+                    card_view:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_marginTop="16dp"
+                    card_view:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+                <TextView
+                    android:id="@+id/textView36"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="  Balance"
+                    android:alpha="0.7"
+                    android:layout_marginLeft="16dp"
+                    card_view:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_marginTop="0dp"
+                    card_view:layout_constraintTop_toBottomOf="@+id/textView34" />
+
+                <TextView
+                    android:id="@+id/textView39"
+                    android:layout_width="9dp"
+                    android:layout_height="13dp"
+                    android:text="\u20B9"
+                    android:layout_marginTop="16dp"
+                    card_view:layout_constraintTop_toBottomOf="@+id/imageView5"
+                    android:layout_marginLeft="16dp"
+                    card_view:layout_constraintLeft_toLeftOf="parent"
+                    card_view:layout_constraintRight_toLeftOf="@+id/textView34"
+                    android:layout_marginRight="0dp"
+                    card_view:layout_constraintHorizontal_bias="1.0" />
+
+
+            </android.support.constraint.ConstraintLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="336dp"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="12dp"
+                    android:textColor="@color/colorPrimary"
+                    android:text="Latest Transactions"
+                    android:textSize="28dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    tools:layout_editor_absoluteY="0dp" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="60dp"
+                    android:layout_weight="1"
+                    android:text="TextView"
+                    android:textSize="12dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/textView10" />
+
+
+                <ListView
+                    android:id="@+id/listView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:alpha="0.8"
+                    android:paddingTop="20dp"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    tools:layout_editor_absoluteY="598dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/textView10" />
+
+                <Button
+                    android:id="@+id/button8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:alpha="0.7"
+                    android:background="@android:color/transparent"
+                    android:gravity="start"
+                    android:paddingLeft="0dp"
+                    android:text="See All"
+                    android:textAlignment="viewStart"
+                    android:textAllCaps="false"
+                    android:layout_alignParentBottom="true" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            app:cardUseCompatPadding="true">
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Areas Spent"
+                    android:textSize="28sp"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:textColor="@color/colorPrimary"
+                    android:paddingTop="12dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginLeft="2dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_marginStart="2dp" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="360dp"
+                    android:layout_height="1dp"
+                    android:text="TextView"
+                    android:background="@android:color/darker_gray"
+                    android:alpha="0.3"
+                    app:layout_constraintTop_toBottomOf="@+id/textView7"
+                    android:layout_marginLeft="2dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_marginStart="2dp" />
+
+                <com.github.mikephil.charting.charts.PieChart
+                    android:id="@+id/pie"
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="76dp" />
+
+            </android.support.constraint.ConstraintLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+
+    </LinearLayout>
+
+</ScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:fabSize="normal"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        app:srcCompat="@android:drawable/ic_input_add"
+        android:backgroundTint="@color/colorPrimary"
+        android:tint="@android:color/white"
+        app:useCompatPadding="true"
+        app:borderWidth="0dp"/>
+
+</RelativeLayout>

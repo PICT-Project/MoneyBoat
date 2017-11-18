@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/screen4">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="110dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="295dp"
+            android:layout_height="300dp"
+            android:src="@drawable/boats" />
+
+    </LinearLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <TextView
+            android:id="@+id/textView29"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="    Your groups\n        with\n friends and family!"
+            android:fontFamily="cursive"
+            android:textColor="@android:color/black"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="232dp"
+            android:layout_marginLeft="238dp"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="282dp"
+            android:layout_marginTop="165dp"
+            android:fontFamily="cursive"
+            android:text="          Your harbour\n                 aka\n           list of groups!           "
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginRight="16dp"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            app:srcCompat="@drawable/fin3"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="165dp"
+            android:layout_marginLeft="181dp"
+            app:layout_constraintLeft_toLeftOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="      Click here to\ncreate your boat aka group!"
+            android:layout_marginTop="14dp"
+            android:textColor="@android:color/black"
+            android:fontFamily="cursive"
+            app:layout_constraintTop_toBottomOf="@+id/imageView10"
+            android:layout_marginLeft="150dp"
+            android:textSize="18sp"
+
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            app:srcCompat="@drawable/fin4"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="366dp"
+            android:layout_marginLeft="180dp"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="288dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/h1" />
+
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Proceed to login -->"
+            android:textColor="@android:color/white"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="511dp"
+            android:layout_marginLeft="135dp"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</RelativeLayout>

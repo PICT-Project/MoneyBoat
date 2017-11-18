@@ -1,0 +1,126 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="345dp"
+        android:layout_height="50dp"
+        android:text="+ Sail"
+        android:textColor="#777777"
+        android:textSize="20sp"
+        android:background="@color/cardview_light_background"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="345dp"
+        android:layout_height="80dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        android:id="@+id/cardView2"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp">
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create Your Boat"
+                android:textSize="24sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintVertical_bias="0.509"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp" />
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="345dp"
+        android:layout_height="454dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2"
+        android:id="@+id/cardView">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/rl"
+                android:layout_width="338dp"
+                android:layout_height="349dp"
+                android:layout_marginLeft="5dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="104dp">
+
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/editText3"
+                android:layout_width="165dp"
+                android:layout_height="43dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="16dp"
+                android:inputType="textPersonName"
+                android:textCursorDrawable="@null"
+                android:backgroundTint="@color/colorPrimary"
+                android:textSize="20sp"
+                app:layout_constraintLeft_toRightOf="@+id/textView3"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Boat name"
+
+                android:textSize="20sp"
+                android:layout_marginLeft="16dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="16dp" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="96dp"
+                android:layout_height="23dp"
+                android:dropDownWidth="100dp"
+                android:entries="@array/spinner"
+                app:layout_constraintLeft_toRightOf="@+id/textView8"
+                android:layout_marginLeft="48dp"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="70dp" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Crew members"
+                android:textSize="20sp"
+                android:layout_marginTop="30dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView3"
+                android:layout_marginLeft="16dp"
+                app:layout_constraintLeft_toLeftOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+
+
+</android.support.constraint.ConstraintLayout>
